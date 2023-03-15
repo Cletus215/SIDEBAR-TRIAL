@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(241, 219, 219);
+  width: 30%;
+  height: 100%;
+  transition: all 0.3s linear;
+  transform: translate(-100%);
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+
+.menu a {
+  font-size: 1.5rem;
+  display: block;
+  text-decoration: none;
+  color: darkgreen;
+  padding: 1.5rem 1.5rem;
+}
+
+.menu a:hover {
+  cursor: pointer;
+  background: rosybrown;
+}
+
+.menu li {
+  padding: 1.5rem 1rem;
+  list-style: none;
+}
+
+.fa-bars {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  color: chartreuse;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.fa-bars:hover {
+  color: rgb(249, 11, 59);
+}
+
+.fa-square-xmark {
+  color: rgb(106, 7, 7);
+  font-size: 20px;
+}
+
+.fa-square-xmark:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.fa-house {
+  position: absolute;
+
+  top: 108px;
+}
+
+.fa-address-book {
+  position: absolute;
+  top: 227px;
+}
